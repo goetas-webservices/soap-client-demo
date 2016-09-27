@@ -1,0 +1,13 @@
+soap_client: ~
+
+xsd2php:
+  namespaces:
+    'http://ws.cdyne.com/WeatherWS/': 'WeatherWS'
+  destinations_php:
+    'WeatherWS': src
+  destinations_jms:
+    'WeatherWS': metadata
+
+wsdl2php:
+  metadata:
+    'http://wsf.cdyne.com/WeatherWS/Weather.asmx?WSDL': ~
