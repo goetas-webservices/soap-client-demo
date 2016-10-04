@@ -15,5 +15,5 @@ before_script:
   - composer install
 
 script:
-  - vendor/bin/soap-client -vvv generate config/config.yml src/Container --dest-class=WeatherWS/Container/SoapContainer
+  - vendor/bin/soap-client generate config/config.yml src/Service/Container --dest-class=Service/Container/SoapContainer
   - php bin/demo.php
