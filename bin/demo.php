@@ -32,7 +32,7 @@ $result = $client->add(1,5);
 VarDumper::dump($result);
 VarDumper::dump($result->getAddResult());
 
-exit 0;
+exit(0);
 
 /**
  * @var $client WeatherSoap
