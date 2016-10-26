@@ -9,24 +9,23 @@ the [goetas-webservices/soap-client](https://github.com/goetas-webservices/soap-
 
 Steps to use this demo project: 
 
-1. clone ths repo
+1. clone this repo
 2. run `composer install` to get the dependencies 
-3. run `vendor/bin/soap-client -vvv generate config/config.yml src/Container --dest-class=WeatherWS/Container/SoapContainer`
+3. run `vendor/bin/soap-client -vvv generate config/config.yml src/Service/Container --dest-class=Service/Container/SoapContainer`
  to generate all the required files
-4. run `php bin/demo.php` to see a working demo consuming `http://wsf.cdyne.com/WeatherWS/Weather.asmx?WSDL` Weather 
- forecast SOAP webservice
+4. run `php bin/demo.php` to see a working demo consuming `http://www.dneonline.com/calculator.asmx?WSDL` Calculator SOAP webservice
 5. enjoy SOAP again
 6. bonus: notice the code and type hinting by PhpStorm on `$client` and `$result` variable :) 
 
 ## Dependencies 
 
-Here an explanation of dependencies present in  `composer.json`
+Here an explanation of dependencies present in `composer.json`
 
 - `php` this demo is tested on ^5.5|^7.0 php versions
 - `symfony/var-dumper` is optional and is used in this demo ony to color the output on the console
 - `goetas-webservices/soap-client` this is the main SOAP client dependency
 - `php-http/guzzle6-adapter` your HTTP client implementation, any [php-http client](http://docs.php-http.org/en/latest/clients.html) 
- implementation works fine(I have opted for [guzzle6](https://github.com/guzzle/guzzle), at the moment guzzle, curl, buzz an react clients are supported).
+ implementation works fine(I have opted for [guzzle6](https://github.com/guzzle/guzzle), at the moment guzzle, curl, buzz and react clients are supported).
 - `php-http/message` PSR-7 http message factories, more info are available on [docs.php-http.org](http://docs.php-http.org/en/latest/httplug/users.html)
 - `guzzlehttp/psr7`, my PSR-7 message implementation choice for `php-http/message` 
 - `goetas-webservices/wsdl2php` (require-dev) this is the main dev dependency, has to be used during development 
