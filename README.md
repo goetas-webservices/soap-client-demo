@@ -9,7 +9,7 @@ the [goetas-webservices/soap-client](https://github.com/goetas-webservices/soap-
 
 Steps to use this demo project: 
 
-1. clone ths repo
+1. clone this repo
 2. run `composer install` to get the dependencies 
 3. run `vendor/bin/soap-client -vvv generate config/config.yml src/Container --dest-class=WeatherWS/Container/SoapContainer`
  to generate all the required files
