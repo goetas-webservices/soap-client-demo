@@ -1,4 +1,7 @@
 soap_client: ~
+#  alternative_endpoints:
+#    service:
+#      port: http://localhost:8080
 
 xsd2php:
   namespaces:
