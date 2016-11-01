@@ -1,7 +1,6 @@
 <?php
 namespace Example;
 
-
 use GoetasWebservices\SoapServices\SoapClient\ClientFactory;
 use GoetasWebservices\SoapServices\SoapCommon\Builder\SoapContainerBuilder;
 use Symfony\Component\VarDumper\VarDumper;
@@ -21,14 +20,18 @@ $metadata = $container->get('goetas_webservices.soap_client.metadata_reader');
 
 $factory = new ClientFactory($metadata, $serializer);
 
+
 /**
  * @var $client CalculatorSoap
  */
-$client = $factory->getClient('http://www.dneonline.com/calculator.asmx?WSDL', "CalculatorSoap", "Calculator");
+$client = $factory->getClient(
+    'http://www.dneonline.com/calculator.asmx?WSDL',
+    "CalculatorSoap",
+    "Calculator"
+);
 
 
 $result = $client->add(1,5);
-
 
 VarDumper::dump($result);
 VarDumper::dump($result->getAddResult());
