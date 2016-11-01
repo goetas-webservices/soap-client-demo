@@ -26,7 +26,13 @@ $factory = new ClientFactory($metadata, $serializer);
  */
 $client = $factory->getClient('http://www.dneonline.com/calculator.asmx?WSDL', "CalculatorSoap", "Calculator");
 
+
 $result = $client->add(1,5);
+
 
 VarDumper::dump($result);
 VarDumper::dump($result->getAddResult());
+
+exit;
+
+VarDumper::dump($client->multiply(5,6));
