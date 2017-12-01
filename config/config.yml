@@ -1,22 +1,14 @@
-soap_client: ~
-#  alternative_endpoints:
-#    service:
-#      port: http://localhost:8080
-
-xsd2php:
+soap_client:
+  #  alternative_endpoints:
+  #    service:
+  #      port: http://localhost:8080
   namespaces:
     'http://tempuri.org/': 'Calculator'
-    'http://ws.cdyne.com/WeatherWS/': 'WeatherWS'
 
   destinations_php:
     'Calculator': src/Calculator
-    'WeatherWS': src/WeatherWS
 
   destinations_jms:
     'Calculator': metadata/Calculator
-    'WeatherWS': metadata/WeatherWS
-
-wsdl2php:
   metadata:
-    'http://wsf.cdyne.com/WeatherWS/Weather.asmx?WSDL': ~
     'http://www.dneonline.com/calculator.asmx?WSDL': ~
