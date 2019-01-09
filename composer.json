@@ -10,7 +10,7 @@
   "require": {
     "php": "^5.5|^7.0",
 
-    "goetas-webservices/soap-client": "^0.2",
+    "goetas-webservices/soap-client": "^0.2.8",
 
     "php-http/guzzle6-adapter": "^1.0",
     "php-http/message": "^1.0",
@@ -19,7 +19,8 @@
     "symfony/var-dumper": "*"
   },
   "require-dev": {
-    "goetas-webservices/wsdl2php": "^0.3"
+    "goetas-webservices/wsdl2php": "^0.4.2",
+    "goetas-webservices/wsdl-reader": "^0.3.3"
   },
   "autoload": {
     "psr-4": {

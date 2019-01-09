@@ -21,7 +21,7 @@ Steps to use this demo project:
 
 Here an explanation of dependencies present in `composer.json`
 
-- `php` this demo is tested on ^5.5|^7.0 php versions
+- `php` this demo is tested on PHP 7.1
 - `symfony/var-dumper` is optional and is used in this demo ony to color the output on the console
 - `goetas-webservices/soap-client` this is the main SOAP client dependency
 - `php-http/guzzle6-adapter` your HTTP client implementation, any [php-http client](http://docs.php-http.org/en/latest/clients.html) 
