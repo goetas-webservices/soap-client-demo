@@ -10,7 +10,7 @@
   "require": {
     "php": "^5.5|^7.0",
 
-    "goetas-webservices/soap-client": "^0.2.7",
+    "goetas-webservices/soap-client": "^0.2.8",
 
     "php-http/guzzle6-adapter": "^1.0",
     "php-http/message": "^1.0",
